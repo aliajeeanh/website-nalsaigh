@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/picdisplay.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    
+
+
+    <title>Nejib Alsayigh Portfolio</title>
+</head>
+
+
+
+
+<body>
+
+
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $.get("navigation.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content"> <a href="/showroom.html">
+                        <div class="content-overlay"></div> <img class="content-image" src="/usb/tavlor-banner.JPG">
+                        <div class="content-details">
+                            <h3 class="content-title">Galleri</h3>
+                        </div>
+                    </a> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content"> <a href="/about.html">
+                        <div class="content-overlay"></div> <img class="content-image" src="/usb/image2.JPeG">
+                        <div class="content-details ">
+                            <h3 class="content-title">OM</h3>
+                        </div>
+                    </a> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content"> <a href="/contact.html">
+                        <div class="content-overlay"></div> <img class="content-image" src="/usb/kontakt-banner.JPG">
+                        <div class="content-details ">
+                            <h3 class="content-title">KONTAKT</h3>
+                        </div>
+                    </a> </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/index.html">Hem</a></li>
+                <li class="list-inline-item"><a href="/showroom.html">Galleri</a></li>
+                <li class="list-inline-item"><a href="/about.html">Om</a></li>
+                <li class="list-inline-item"><a href="/contact.html">Kontakt</a></li>
+            </ul>
+            <p class="copyright">© 2023 Ali Ajeenah. All Rights Reserved</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

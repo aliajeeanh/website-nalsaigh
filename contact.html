@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/header.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+
+    <title>Nejib Alsayigh Portfolio</title>
+
+
+    <script src="/js/form.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('RXsWP-PgsssnliCdX');
+        })();
+    </script>
+
+</head>
+
+<body>
+
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $.get("navigation.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+    <h3 class="header1">Kontakt</h3>
+    <p>Om du har några frågor, feedback eller om du är intresserad av att köpa eller beställa konstverk, tveka inte att ta kontakt med mig. Jag ser fram emot att höra från dig!</p>
+    <h3 class="header">Kontaktformulär</h3>
+    <p class="formul">Använd gärna kontaktformuläret nedan för att skicka mig ett meddelande. Jag kommer att svara på ditt meddelande så snart som möjligt. </p>
+    
+
+    <section class="contact">
+        <div>
+            <h1>Kontaktformulär</h1>
+            <form id="contact-form">
+                <label for="user_name">Namn</label>
+                <input type="text" id="user_name" name="user_name" placeholder="Ditt namn" required />
+
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="user_email" placeholder="example@mail.com" required />
+
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" placeholder="Ditt meddelande..." required></textarea>
+
+                <button onclick="SendMail(event)">Send</button>
+            </form>
+        </div>
+    </section>
+    <h3 class="top">E-post</h3>
+    <p>Om du föredrar att kontakta mig direkt via e-post kan du nå mig på <a href="mailto: nalsayigh@yahoo.com">nalsayigh@yahoo.com</a>. Jag ser till att svara snarast möjligt.</p>
+    <h3 class="header">Integritetspolicy</h3>
+    <p>Din integritet är viktig för mig. All personlig information du lämnar genom kontaktformuläret eller e-post kommer att behandlas konfidentiellt och inte delas med tredje part utan ditt samtycke. </p>
+
+
+    <div class="footer">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/index.html">Hem</a></li>
+                <li class="list-inline-item"><a href="/showroom.html">Galleri</a></li>
+                <li class="list-inline-item"><a href="/about.html">Om</a></li>
+                <li class="list-inline-item"><a href="/contact.html">Kontakt</a></li>
+            </ul>
+            <p class="copyright">© 2023 Ali Ajeenah. All Rights Reserved</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
