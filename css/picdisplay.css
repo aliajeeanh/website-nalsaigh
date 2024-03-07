@@ -1,0 +1,191 @@
+/* @media (max-width: 767px) {
+    .row, .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        width: 75%;
+        height: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+} */
+
+/* For desktop devices */
+/* @media (min-width: 768px) {
+     .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-container img {
+        margin: 10px;
+        width: 20%;
+        height: auto;
+    }
+} */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 15px;
+    padding: 10px 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    background: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif
+}
+
+.container {
+    margin-top: 130px
+}
+
+.row {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+
+}
+
+.title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    overflow: hidden
+}
+
+@media (max-width: 1350px) {
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    margin-left:0px;
+}
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    opacity: .8;
+}
+
+.content:hover .content-overlay {
+    opacity: .1;
+}
+
+.content-image {
+    width: 100%
+}
+
+img {
+
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 40%;
+    margin-left: auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    margin-right: auto;
+    height: 7px;
+    background-color: black;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}

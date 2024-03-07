@@ -1,0 +1,39 @@
+.text{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+
+.aboutTxT {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 9000px;
+}
+
+.abo {
+    text-align: center;
+}
+
+.abo li {
+    font-size: 17px;
+    list-style-position: inside;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+hr {
+    width: 40%;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    height: 7px;
+    background-color: black;
+}
